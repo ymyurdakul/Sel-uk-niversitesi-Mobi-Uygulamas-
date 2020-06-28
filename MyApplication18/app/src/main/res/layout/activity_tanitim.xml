@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tanitim"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="Üniversite Tanıtım"
+        android:id="@+id/tanitim_tool_bar"
+        style="@style/TopNavigationStyle"
+        app:titleTextColor="@color/customBlue"
+
+
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+<com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+    android:layout_below="@id/tanitim_tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:id="@+id/tanitim_youtube_videoplayer"
+    app:videoId="kGMmxpaD1WU"
+    app:autoPlay="true"
+    app:showFullScreenButton="true"
+
+    >
+
+</com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+</RelativeLayout>

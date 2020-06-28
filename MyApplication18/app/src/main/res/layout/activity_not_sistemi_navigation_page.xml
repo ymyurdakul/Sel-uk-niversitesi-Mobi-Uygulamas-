@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotSistemiNavigationPage">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/TopNavigationStyle"
+    android:id="@+id/not_bilgi_sistemi_appbar_layout"
+
+    >
+    <androidx.appcompat.widget.Toolbar
+        app:title="Not Bilgi Sistemi"
+        android:id="@+id/not_bilgi_sistemi_toolbar"
+        style="@style/TopNavigationStyle"
+        android:gravity="end"
+        app:titleTextColor="@color/customBlue"
+       >
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_not_bilgi_sistemi_ogrsayfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/customBlue"
+            android:text="Öğrenci"
+            android:layout_weight="1"
+            android:textColor="@color/customBlue"
+            android:textSize="10dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_not_bilgi_sistemi_personelsayfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/customBlue"
+            android:text="Personel"
+            android:layout_weight="1"
+            android:textColor="@color/customBlue"
+            android:textSize="10dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_not_bilgi_sistemi_akademisyensayfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/customBlue"
+            android:text="Akademisyen"
+            android:layout_weight="1"
+            android:textColor="@color/customBlue"
+            android:textSize="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.appbar.AppBarLayout>
+    <WebView
+        android:id="@+id/not_bilgi_sistemi_webview"
+        android:layout_below="@id/not_bilgi_sistemi_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    android:layout_margin="3dp"
+
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:padding="5dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/recitem_tv_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="Mustafa Şahin"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rec_item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recitem_tv_contact_name"
+            android:layout_marginLeft="3dp"
+            android:text="Rektörlük"
+            android:textSize="18dp"
+
+            />
+
+        <TextView
+            android:id="@+id/recitem_tv_contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rec_item_detail"
+            android:layout_marginLeft="3dp"
+            android:text="0553 565 13 49"
+            android:textColor="#009"
+            android:textSize="19dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rec_item_btnCall"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:icon="@mipmap/dial"
+            app:iconPadding="5dp"
+            app:iconSize="30dp"
+            app:iconTint="@color/fbutton_color_belize_hole"
+
+
+            />
+
+    </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+

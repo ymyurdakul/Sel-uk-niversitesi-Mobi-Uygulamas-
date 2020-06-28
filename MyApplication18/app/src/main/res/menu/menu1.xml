@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@mipmap/harita"
+        android:title="Home"
+       />
+    <item
+        android:id="@+id/activity"
+        android:icon="@mipmap/hava"
+        android:title="Activity"
+         />
+    <item
+        android:id="@+id/favorites"
+        android:icon="@mipmap/rektor"
+        android:title="Favorites"
+        app:cnb_iconColor="#444"
+          />
+    <item
+        android:id="@+id/settings"
+        android:icon="@mipmap/dial"
+        android:title="Settings"
+        />
+</menu>

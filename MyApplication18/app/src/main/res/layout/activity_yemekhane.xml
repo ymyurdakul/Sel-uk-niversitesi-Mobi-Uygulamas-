@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Yemekhane">
+    <androidx.appcompat.widget.Toolbar
+        app:title="Yemekhane"
+        android:id="@+id/yemekhane_tool_bar"
+        style="@style/TopNavigationStyle"
+        app:titleTextColor="@color/customBlue"
+        />
+
+
+
+    <LinearLayout
+    android:id="@+id/btns"
+    style="@style/TopNavigationStyle"
+    android:layout_below="@id/yemekhane_tool_bar"
+     >
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yemekhane_rezervasyon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/customBlue"
+        android:text="REzarvasyon"
+        android:layout_weight="1"
+        android:textColor="@color/customBlue"
+        android:textSize="10dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yemekhane_yemeklistesi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/customBlue"
+        android:text="Yemek Listesi"
+        android:layout_weight="1"
+        android:textColor="@color/customBlue"
+        android:textSize="10dp"
+        />
+</LinearLayout>
+    <WebView
+        android:id="@+id/yemekhane_webview"
+        android:layout_below="@id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</RelativeLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/template"
+    >
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/intro_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/intro_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/selcuk"
+                android:layout_centerHorizontal="true"
+                />
+
+
+<com.facebook.shimmer.ShimmerFrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+</com.facebook.shimmer.ShimmerFrameLayout>
+        <TextView
+            android:id="@+id/intro_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELÇUK ÜNİVERSİTESİ
+MOBİL BİLGİ SİSTEMİ"
+            android:textAlignment="center"
+            android:layout_below="@id/intro_logo"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorDarkRed"
+
+            />
+        <RelativeLayout
+            android:layout_below="@id/intro_text"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDarkRed"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/menu_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intro_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDuyurular"
+                style="@style/MainNavigationButton"
+                app:icon="@mipmap/duyurular"
+                android:text="Duyurular"
+                android:paddingLeft="5dp"
+
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnYemekListesi"
+                 style="@style/MainNavigationButton"
+                app:icon="@mipmap/yemek_listesi"
+                android:text="Yemekhane"
+                android:layout_toRightOf="@id/btnDuyurular"
+                android:layout_marginLeft="5dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNotSistemi"
+                android:layout_toRightOf="@id/btnYemekListesi"
+                style="@style/MainNavigationButton"
+                android:text="Not Sistemi"
+                app:icon="@mipmap/not_sistemi"
+                android:layout_marginLeft="5dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn1a"
+                style="@style/MainNavigationButton"
+                app:icon="@mipmap/etkinlik"
+                android:text="Etkinlik"
+                android:paddingLeft="5dp"
+
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRehber"
+                style="@style/MainNavigationButton"
+                app:icon="@mipmap/rehber"
+                android:text="REhber"
+                android:layout_toRightOf="@id/btn1a"
+                android:layout_marginLeft="5dp"
+
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAkademikTakvim"
+                android:layout_toRightOf="@id/btnRehber"
+                style="@style/MainNavigationButton"
+                android:text="TAKVİM"
+                app:icon="@mipmap/calendar"
+                android:layout_marginLeft="5dp"
+                />
+
+        </RelativeLayout> <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1b"
+            style="@style/MainNavigationButton"
+            android:text="Ulaşım"
+            app:icon="@mipmap/ulasim"
+            android:paddingLeft="5dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHarita"
+            style="@style/MainNavigationButton"
+            app:icon="@mipmap/harita"
+            android:text="HArita"
+            android:layout_toRightOf="@id/btn1b"
+            android:layout_marginLeft="5dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn3b"
+            android:layout_toRightOf="@id/btnHarita"
+            style="@style/MainNavigationButton"
+            android:text="ÖSYM"
+            app:icon="@mipmap/tanitim"
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout> <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1c"
+            style="@style/MainNavigationButton"
+            app:icon="@mipmap/bolumler"
+            android:text="Bölümler"
+            android:paddingLeft="5dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2c"
+            style="@style/MainNavigationButton"
+            app:icon="@mipmap/ens"
+            android:text="Enstitü"
+            android:layout_toRightOf="@id/btn1c"
+            android:layout_marginLeft="5dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTanitim"
+            style="@style/MainNavigationButton"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/btn2c"
+            android:text="Tanıtım"
+            app:icon="@mipmap/rektor" />
+
+    </RelativeLayout> <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1d"
+            style="@style/MainNavigationButton"
+            android:text="Linkler"
+            app:icon="@mipmap/linkler"
+            android:paddingLeft="5dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2d"
+            style="@style/MainNavigationButton"
+            app:icon="@mipmap/hava"
+            android:text="Hava"
+            android:layout_toRightOf="@id/btn1d"
+            android:layout_marginLeft="5dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnKonya"
+            android:layout_toRightOf="@id/btn2d"
+            style="@style/MainNavigationButton"
+            android:text="konya"
+
+            android:layout_marginLeft="5dp"
+            />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_below="@id/menu_lin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkRed"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        />
+
+
+
+
+
+</RelativeLayout>

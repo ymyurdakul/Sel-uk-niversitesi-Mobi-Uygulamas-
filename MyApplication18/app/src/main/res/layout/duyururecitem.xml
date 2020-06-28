@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    android:layout_margin="3dp"
+
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/duyururecitem_tv_duyurutext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="Teknoloji Fakültesi Araştırma Görevlisi Alım Sonucu Açıklandı"
+        android:textSize="18dp"
+        android:ems="15"
+        android:textStyle="bold" />
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/duyururecitem_btnlink"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text=">"
+        android:textStyle="bold"
+        android:textColor="#009"
+
+
+        />
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

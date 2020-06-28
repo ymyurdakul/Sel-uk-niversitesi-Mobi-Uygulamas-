@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AkademikTakvim">
+    <androidx.appcompat.widget.Toolbar
+        style="@style/TopNavigationStyle"
+        app:title="Akademik Takvim"
+        android:id="@+id/akademik_takvim_toolabar"
+        app:titleTextColor="@color/customBlue"
+        >
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <WebView
+        android:id="@+id/akademik_takvim_webview"
+        android:layout_width="match_parent"
+        android:layout_below="@id/akademik_takvim_toolabar"
+
+        android:layout_height="match_parent"></WebView>
+</RelativeLayout>
